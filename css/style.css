@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  
+  max-width: 800px; /* Larghezza massima del carousel */
+  margin: 0 auto; /* Centra il carousel orizzontalmente */
+}
+#app{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+img {
+  margin-top: 20px;
+  width: 1400px;
+  height: 900px;
+  border: solid 15px grey;
+  border-radius: 5px;
+  object-fit: fill;
+}
+
+.controls {
+  margin-top: 10px;
+  display: none;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in versioni precedenti di Vue */ {
+  opacity: 0.3;
+  
+}
